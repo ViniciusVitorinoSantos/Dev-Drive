@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+
+      /* Estilos gerais */
+      * {
+        font-family: sans-serif;
+        line-height: 1.5;
+      }
+
+      /* Estilo do cabeçalho */
+      #header {
+        background-color: #222;
+        color: #fff;
+        padding: 20px;
+      }
+
+      /* Estilo da navegação */
+      .nav-item {
+        display: inline-block;
+        padding: 10px;
+        border: 1px solid #000; 
+      }
+
+      /* Estilo do conteúdo */
+      #main {
+        padding: 20px;
+      }
+
+      /* Estilo dos pés de página */
+      #footer {
+        background-color: #222;
+        color: #fff;
+        padding: 20px;
+      }
+   
+      .propriedade{
+        text-align: center;
+        background-color: rgba(0,0,0,0.5);
+      }
+
+      .propriedade:hover{
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: #11e839;
+      }

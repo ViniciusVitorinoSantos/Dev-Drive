@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #luz, #tecla {
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+      function turnOn() {
+        document.getElementById("int").src = "_imgs/interruptor-ligado.png";
+        document.getElementById("lampada").src = "_imgs/lampada-acesa.jpg"; 
+      }
+      function turnOff() {
+        document.getElementById("int").src = "_imgs/interruptor.png";
+        document.getElementById("lampada").src = "_imgs/lampada-apagada.jpg";
+      }
+    </script>
+
+    <div id="luz">
+        <img src="_imgs/lampada-apagada.jpg" alt="lampada-apagada" id="lampada" name="lampada">
+    </div>
+    <div id="tecla">
+        <img src="_imgs/interruptor.png" alt="tecla-lig-des" id="int" name="tecla" onclick="turnOn()" ondblclick="turnOff()">
+    </div>
+</body>
+</html>

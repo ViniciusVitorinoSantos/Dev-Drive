@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta author="author" content="Vinicius Vitorino Dos Santos" style="font-size: 15" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE TESTE</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: arial, Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
+
+        #menu ul {
+            list-style: none;
+            border: 1px solid black;
+        }
+
+        #menu li {
+            position: relative;
+            border-right: 1px solid black;
+        }
+
+        #menu li a {
+            color: black;
+            text-decoration: none;
+            padding: 5px 10px;
+            display: block;
+        }
+
+
+        #menu li a:hover {
+            background: #333;
+            color: #fff;
+            -moz-box-shadow: 0 3px 10px 0 #CCC;
+            box-shadow: 0 3px 10px 0 #CCC;
+            -webkit-box-shadow: 0 3px 10px 0 #ccc;
+            text-shadow: 0px 0px 5px #fff;
+        }
+
+        #menu li ul {
+            position: absolute;
+            top: 25px;
+            left: 0;
+            background-color: #fff;
+            display: none;
+        }
+
+        #menu li:hover ul,
+        #menu li.over ul {
+            display: block;
+        }
+
+        #menu li ul li {
+            border: 1px solid #c0c0c0;
+            width: 150px;
+        }
+
+        .logo {
+            margin: 10px;
+        }
+
+        header,
+        #menu,
+        #menu ul {
+            display: flex;
+        }
+
+        #menu {
+            flex: 1;
+            /* isto é para a nav ocupar a largura toda menos a logo */
+            justify-content: center;
+            /* alinha horizontalmente */
+            align-items: center;
+            /* alinha verticalmente */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <figure class="logo"><img alt="Logo" src="imagens/regras-css.jpg" width="400px" height="200px"></figure>
+        <nav id="menu">
+            <ul class="menu-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Design Gráfico</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Links</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br><br><br><br><br><br><br><br>
+
+
+
+<header>
+    <nav id="menu2">
+        <ul class="menu-list2">
+            <li><a href="index.php">Home</a></li>
+            <li><a href="sobre.php">Sobre</a></li>
+            <li><a href="servicos.php">Serviços</a></li>
+            <ul>
+                <li><a href="webdesign.php">Web Design</a></li>
+                <li><a href="designgrafico.php">Design Gráfico</a></li>
+            </ul>
+            <li><a href="contato.php">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+<br><br><br><br><br><br><br><br><br><br>
+<footer><div class="rodape">Victorious Virus&copy;</div></footer>
+</body>
+
+</html>

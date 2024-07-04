@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: black;
+        }
+        #area{
+            background-color: red;
+            width: 200px; height: 200px; line-height: 200px;
+            text-align: center;
+            color: aliceblue;
+            border-radius: 80px 120px 0 120px;
+            transition: 3s;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="area">
+        interaja...
+    </div>
+    <script>
+        var a = document.getElementById('area');
+
+        a.addEventListener('click', click);
+        a.addEventListener('mouseenter', entrada);
+        a.addEventListener('mouseout', saida);
+
+
+        function click(){
+            a.style.background = 'green';
+            a.innerText = 'click';
+        }
+
+        function entrada(){
+            a.style.background = 'blue';
+            a.innerText = 'enter';
+        }
+
+        function saida(){
+            a.style.background = 'red';
+            a.innerText = 'out';
+            a.style.textTransform = 'uppercase';
+        }
+    </script>
+</body>
+</html>

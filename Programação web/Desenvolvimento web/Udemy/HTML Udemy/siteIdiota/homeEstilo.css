@@ -1,0 +1,78 @@
+body{
+    background-color: #34a93a;
+    color: aliceblue;
+}
+
+h1{
+    font-size: 30pt;
+    font-family:  Georgia, serif;
+    color: rgb(247, 247, 249);
+    text-align: center;
+    text-shadow: 2px 2px 10px black;
+}
+
+::-webkit-scrollbar{
+    
+    width: 10px;
+    height: 20px;
+}
+
+:hover::-webkit-scrollbar{
+    transition: 4s;
+    width: 5px;
+    background-color: #34a93a;
+}
+
+::-webkit-scrollbar-track{
+    background: #34a93a;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(228, 215, 215);
+    border-radius: 30px;
+}
+table#sheldon{
+   
+    text-align: center;
+    text-shadow: 2px 2px 10px black;;
+    box-shadow: 2px 2px 10px black;
+    position: absolute 200px 0px;
+    
+}
+table#sheldon:hover{
+    text-transform:uppercase;
+    transition: 1s ;  
+}
+
+table#sheldon:hover{
+   color: rgba(0, 0, 0, .5);
+   transition: 2s;
+}
+
+ img#sheldon.jpg:hover{
+   background-color: rgba(0, 0, 0, .5);
+   transition: 1s;
+}
+table#sheldon{
+    text-align: left;
+}
+/*
+div.leonard{
+   
+    text-align: center;
+    text-shadow: 2px 2px 10px black;;
+    box-shadow: 2px 2px 10px black;
+    position: relative  200px 100px;
+    margin-top: auto;
+}
+
+div.leonard:hover{
+    text-transform:uppercase;
+    transition: 2s ;
+}
+
+div.leonard{
+    text-align: center;
+}
+*/

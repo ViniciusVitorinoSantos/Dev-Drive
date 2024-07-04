@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Seguindo o cronograma do Gustavo Guanabara -->
+    <script async>
+        const nome = window.prompt("Digite seu nome: ");
+        alert(`Olá, ${nome} !`);
+        //Number.parseInt(); 
+        let n1 = Number.parseInt(window.prompt(`${nome}, digite o primeiro número: `));
+        let n2 = Number.parseInt(window.prompt(`${nome}, digite o segundo número: `));
+        let soma = n1 + n2;
+        alert(`A soma de ${n1} e ${n2} é igual a ${soma}`);
+        
+        //Number();
+        //Aqui não estou usando parse pois o objeto number se encarrega de decidir sé é float ou int; 
+        //Porém essa regra não elimina as outras pois em alguns casos precisamos efetivamente indicar o tipo primitivo;
+        window.confirm($`{nome}, nome vamos tentar mais uma vez ?`);
+        let n3 = number(window.prompt($`{nome}, digite o terceiro numero`));
+        let n4 = number(window.prompt($`{nome}, digite o quarto numero`));
+        let soma2 = n3 + n4;
+        alert(`A soma de ${n3} e ${n4} é igual a ${soma2}`);
+
+
+    </script>
+
+
+    <title>Ex002</title>
+</head>
+
+<body>
+    <hgroup id="titulo">
+        <h1>Tratamento de dados no JS</h1>
+    </hgroup>
+
+    <div>
+        <script>
+            document.wrtite("Olá, Mundo !<br/>");
+        </script>
+    </div>
+</body>
+
+</html>
