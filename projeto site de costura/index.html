@@ -6,19 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto real site de costura</title>
     <style>
-        body{
-            margin: auto;background-color: #dcdcdc;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        section#interface {
+
+        body {
+            margin: auto;
+            background-color: #dcdcdc;
+        }
+
+        div#interface {
+            width: 900px;
+            background-color: #ffffff;
+            margin: -20px auto 0px auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+            padding: 20px;
+        }
+
+        p {
+            text-align: justify;
+            text-indent: 50px;
+        }
+
+        a {
+            color: #606060;
+            text-decoration: none;
+        }
+
+        nav#menu {
+            display: block;
+        }
+
+        nav#menu ul {
+            display: inline-block;
+            list-style: none;
+            text-transform: uppercase;
+            position: absolute;
+            top: 180px;
+            left: 168px;
+        }
+
+        nav#menu ul li {
+            opacity: 0.9;
+            display: inline-block;
+            background-color: #dddddd;
+            padding: 1px;
+            margin: 0px;
+            transition: background-color 1s;
+            /*https://autoprefixer.github.io/pt-br/  --> para manter a retrocompatibilidade */
+            -webkit-transition: background-color 1s;
+            -o-transition: background-color 1s;
+            transition: background-color 1s;
+        }
+
+        nav#menu li:hover {
+            background-color: #606060;
+            cursor: pointer;
+        }
+
+        nav#menu ul li a {
+            color: #ffffff;
+
+        }
+
+        nav#menu h1 {
+            display: none;
+        }
+
+        nav#menu a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        nav#menu a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+
+        section#texto {
             margin: auto;
             text-justify: 20px;
             text-indent: 20px;
         }
+
         div#cab {
             background: url(_img/OIG3\ \(1\).jpg);
-            margin: auto;
+            margin: 0px;
             width: 100%;
             height: 200px;
+
         }
 
         div#cab img#img_jaci {
@@ -26,6 +105,17 @@
             height: 300px;
             opacity: 0.8;
             margin-top: -55px;
+
+        }
+
+        nav#menu {
+            margin: 20px;
+            text-indent: 20px;
+            text-decoration: none;
+        }
+
+        footer#rodape {
+            border-top: solid 1px #000000;
         }
     </style>
     <!--Projeto de um site de costura para a minha avó jacira-->
@@ -33,60 +123,98 @@
 
 <body>
     <!--modelo landing page vai ser hospedado no github pages -->
-    <div id="cab">
-        <img src="_img/jaciraCosturas.png" alt="cabecalho do site" id="img_jaci">
+    <div id="interface">
+
+
+        <header id="cabecalho">
+
+            <div id="cab">
+                <img src="_img/jaciraCosturas.png" alt="cabecalho do site" id="img_jaci">
+            </div>
+
+            <nav id="menu">
+
+                <ul>
+                    <li>Sobre Nós</li>
+                    <li>Nossa História</li>
+                    <li>Passando o Bastão</li>
+                    <li>O Que Nos Diferencia</li>
+                    <li>Venha Nos Conhecer</li>
+                </ul>
+
+            </nav>
+
+        </header>
+
+        <section id="texto">
+            <article>
+                <h1><span>Sobre Nós</span></h1>
+                <p>-Bem-vindo à Jacira Costuras, onde a tradição e a paixão pela costura são passadas de geração em
+                    geração.
+                    Fundada há mais de três décadas por Jacira, nossa pequena empresa começou com um simples amor pela
+                    arte
+                    de
+                    costurar e um compromisso inabalável com a qualidade. Hoje, esse legado continua a florescer sob a
+                    liderança
+                    de sua filha, que carrega consigo não apenas as habilidades, mas também os valores e a dedicação que
+                    fizeram
+                    da Jacira Costuras um nome de confiança na comunidade.</p>
+
+                <h1><span>Nossa História</span></h1>
+                <p>Jacira Costuras teve início na sala de estar da nossa fundadora, Jacira, que transformou seu talento
+                    natural
+                    em uma pequena empresa próspera. Com habilidade e um olhar apurado para detalhes, Jacira conquistou
+                    a
+                    confiança de seus clientes com peças personalizadas, reformas impecáveis e um atendimento acolhedor.
+                    Sua
+                    ética de trabalho e o amor pelo que fazia logo a tornaram conhecida pela excelência.</p>
+
+                <h1><span>Passando o Bastão</span></h1>
+                <p>Com o passar dos anos, Jacira transmitiu seu vasto conhecimento e amor pela costura para sua filha.
+                    Criada
+                    em meio a tecidos, linhas e máquinas de costura, a nova geração trouxe uma nova energia e inovação,
+                    mantendo
+                    a tradição viva enquanto abraçava novas técnicas e tendências. Hoje, sob sua liderança, Jacira
+                    Costuras
+                    continua a crescer, combinando a sabedoria tradicional com um toque moderno.</p>
+
+                <h1><span>O Que Nos Diferencia</span></h1>
+                <p>Na Jacira Costuras, acreditamos que cada peça de roupa conta uma história, e estamos aqui para
+                    ajudá-lo a
+                    contar a sua da melhor maneira possível. Oferecemos uma ampla gama de serviços, incluindo:</p>
+
+                <p> e Reformas: Transformamos suas roupas para que se ajustem perfeitamente a você.
+                    Peças Personalizadas: Criamos roupas exclusivas feitas sob medida, refletindo seu estilo pessoal.
+                    Consultoria de Estilo: Ajudamos você a escolher e combinar peças para criar o visual perfeito.
+                    Nosso Compromisso
+                    Mantemos o compromisso de oferecer o mais alto padrão de qualidade em cada trabalho que realizamos.
+                    Cada
+                    costura é feita com precisão, cada ajuste é medido com cuidado, e cada cliente é tratado com
+                    respeito e
+                    atenção. Valorizamos a confiança que nossos clientes depositam em nós e trabalhamos arduamente para
+                    superar
+                    suas expectativas em cada visita.</p>
+
+                <h1><span>Venha Nos Conhecer</span></h1>
+                <p>Convidamos você a visitar nossa loja e conhecer de perto o trabalho que tem sido o coração da nossa
+                    família
+                    por gerações. Na Jacira Costuras, não vendemos apenas serviços de costura – oferecemos dedicação,
+                    carinho e
+                    a promessa de que cada peça que passa por nossas mãos será tratada com o mesmo amor e cuidado que
+                    dedicamos
+                    à nossa própria família.</p>
+
+                <p>
+                <blockquote>Jacira Costuras – Onde cada ponto conta uma história e cada cliente é parte da nossa
+                    tradição.
+                </blockquote>
+                </p>
+            </article>
+        </section>
+        <footer id="rodape">
+            <p>Desenvolvido por <a href="">Vinicius Vitorino</a></p>
+        </footer>
     </div>
-    <nav id="menu">
-        <ul>
-            <li>Sobre Nós</li>
-        </ul>
-    </nav>
-    <section id="interface">
-        <article>
-            <h1>Sobre Nós</h1>
-            <p>-Bem-vindo à Jacira Costuras, onde a tradição e a paixão pela costura são passadas de geração em geração.
-            Fundada há mais de três décadas por Jacira, nossa pequena empresa começou com um simples amor pela arte de
-            costurar e um compromisso inabalável com a qualidade. Hoje, esse legado continua a florescer sob a liderança
-            de sua filha, que carrega consigo não apenas as habilidades, mas também os valores e a dedicação que fizeram
-            da Jacira Costuras um nome de confiança na comunidade.</p>
-
-            <h1>Nossa História</h1>
-            <p>Jacira Costuras teve início na sala de estar da nossa fundadora, Jacira, que transformou seu talento natural
-            em uma pequena empresa próspera. Com habilidade e um olhar apurado para detalhes, Jacira conquistou a
-            confiança de seus clientes com peças personalizadas, reformas impecáveis e um atendimento acolhedor. Sua
-            ética de trabalho e o amor pelo que fazia logo a tornaram conhecida pela excelência.</p>
-
-            <h1>Passando o Bastão</h1>
-            <p>Com o passar dos anos, Jacira transmitiu seu vasto conhecimento e amor pela costura para sua filha. Criada
-            em meio a tecidos, linhas e máquinas de costura, a nova geração trouxe uma nova energia e inovação, mantendo
-            a tradição viva enquanto abraçava novas técnicas e tendências. Hoje, sob sua liderança, Jacira Costuras
-            continua a crescer, combinando a sabedoria tradicional com um toque moderno.</p>
-
-            <h1>O Que Nos Diferencia</h1>
-            <p>Na Jacira Costuras, acreditamos que cada peça de roupa conta uma história, e estamos aqui para ajudá-lo a
-            contar a sua da melhor maneira possível. Oferecemos uma ampla gama de serviços, incluindo:</p>
-
-            <p> e Reformas: Transformamos suas roupas para que se ajustem perfeitamente a você.
-            Peças Personalizadas: Criamos roupas exclusivas feitas sob medida, refletindo seu estilo pessoal.
-            Consultoria de Estilo: Ajudamos você a escolher e combinar peças para criar o visual perfeito.
-            Nosso Compromisso
-            Mantemos o compromisso de oferecer o mais alto padrão de qualidade em cada trabalho que realizamos. Cada
-            costura é feita com precisão, cada ajuste é medido com cuidado, e cada cliente é tratado com respeito e
-            atenção. Valorizamos a confiança que nossos clientes depositam em nós e trabalhamos arduamente para superar
-            suas expectativas em cada visita.</p>
-
-            <h1>Venha Nos Conhecer</h1>
-            <p>Convidamos você a visitar nossa loja e conhecer de perto o trabalho que tem sido o coração da nossa família
-            por gerações. Na Jacira Costuras, não vendemos apenas serviços de costura – oferecemos dedicação, carinho e
-            a promessa de que cada peça que passa por nossas mãos será tratada com o mesmo amor e cuidado que dedicamos
-            à nossa própria família.</p>
-
-            <p><blockquote>Jacira Costuras – Onde cada ponto conta uma história e cada cliente é parte da nossa tradição.</blockquote> </p>
-        </article>
-    </section>
-    <footer>
-        <p>Desenvolvido por  <a href="https://www.linkedin.com/in/jacira-costuras-a6010019a/">Jacira</a></p>
-    </footer>
 </body>
 <script>
 
