@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto real site de costura</title>
     <style>
+        @font-face {
+            font-family: 'FonteLogo';
+            src: url("./_fonts/BubblegumSans-Regular.ttf");
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -28,6 +33,7 @@
         p {
             text-align: justify;
             text-indent: 50px;
+            margin-bottom: 30px;
         }
 
         a {
@@ -35,6 +41,9 @@
             text-decoration: none;
         }
 
+        h1{
+            font-family: 'FonteLogo';
+        }
         nav#menu {
             display: block;
         }
@@ -135,11 +144,11 @@
             <nav id="menu">
 
                 <ul>
-                    <li>Sobre Nós</li>
-                    <li>Nossa História</li>
-                    <li>Passando o Bastão</li>
-                    <li>O Que Nos Diferencia</li>
-                    <li>Venha Nos Conhecer</li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#nossa">Nossa História</a></li>
+                    <li><a href="#pass">Passando o Bastão</a></li>
+                    <li><a href="#diff">O Que Nos Diferencia</a></li>
+                    <li><a href="#venha">Venha Nos Conhecer</a></li>
                 </ul>
 
             </nav>
@@ -148,7 +157,7 @@
 
         <section id="texto">
             <article>
-                <h1><span>Sobre Nós</span></h1>
+                <h1><span id="sobre">Sobre Nós</span></h1>
                 <p>-Bem-vindo à Jacira Costuras, onde a tradição e a paixão pela costura são passadas de geração em
                     geração.
                     Fundada há mais de três décadas por Jacira, nossa pequena empresa começou com um simples amor pela
@@ -160,7 +169,7 @@
                     fizeram
                     da Jacira Costuras um nome de confiança na comunidade.</p>
 
-                <h1><span>Nossa História</span></h1>
+                <h1><span id="nossa">Nossa História</span></h1>
                 <p>Jacira Costuras teve início na sala de estar da nossa fundadora, Jacira, que transformou seu talento
                     natural
                     em uma pequena empresa próspera. Com habilidade e um olhar apurado para detalhes, Jacira conquistou
@@ -169,7 +178,7 @@
                     Sua
                     ética de trabalho e o amor pelo que fazia logo a tornaram conhecida pela excelência.</p>
 
-                <h1><span>Passando o Bastão</span></h1>
+                <h1><span id="pass">Passando o Bastão</span></h1>
                 <p>Com o passar dos anos, Jacira transmitiu seu vasto conhecimento e amor pela costura para sua filha.
                     Criada
                     em meio a tecidos, linhas e máquinas de costura, a nova geração trouxe uma nova energia e inovação,
@@ -178,7 +187,7 @@
                     Costuras
                     continua a crescer, combinando a sabedoria tradicional com um toque moderno.</p>
 
-                <h1><span>O Que Nos Diferencia</span></h1>
+                <h1><span id="diff">O Que Nos Diferencia</span></h1>
                 <p>Na Jacira Costuras, acreditamos que cada peça de roupa conta uma história, e estamos aqui para
                     ajudá-lo a
                     contar a sua da melhor maneira possível. Oferecemos uma ampla gama de serviços, incluindo:</p>
@@ -195,7 +204,7 @@
                     superar
                     suas expectativas em cada visita.</p>
 
-                <h1><span>Venha Nos Conhecer</span></h1>
+                <h1><span id="venha">Venha Nos Conhecer</span></h1>
                 <p>Convidamos você a visitar nossa loja e conhecer de perto o trabalho que tem sido o coração da nossa
                     família
                     por gerações. Na Jacira Costuras, não vendemos apenas serviços de costura – oferecemos dedicação,
